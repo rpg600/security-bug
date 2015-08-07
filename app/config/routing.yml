@@ -1,0 +1,23 @@
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+
+admin_login:
+    path: /admin/login
+    defaults: {_controller: 'AppBundle:Default:login'}
+
+admin_login_check:
+    path: /admin/login_check
+
+admin_logout:
+    path: /admin/logout
+
+test_login:
+    path: /test/login
+    defaults: {_controller: 'AppBundle:Default:login'}
+
+test_login_check:
+    path: /test/login_check
+
+test_logout:
+    path: /test/logout
